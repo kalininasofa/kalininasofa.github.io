@@ -9,4 +9,60 @@
 <li><a href = "./about.html">Youtube</li><br>
 <li><a href = "/index.html">Сокращенная на глав страницу</li><br>
 </ul>
+
+
+
+  <form>
+  <label for="f.i.o">ФИО:</label>
+  <input type="text" id="f.i.o" name="f.i.o" required>
+  <br/>
+
+  <label for="Phone">Телефон:</label>
+  <input type="tel" id="Phone" name="Phone" required>
+  <br/>
+
+  <label for="Email">E-mail:</label>
+  <input type="Email" id="Email" name="Email">
+  <br/>
+
+  <label for="Birthday">Дата рождения:</label>
+  <input type="date" id="Birthday" name="Birthday" required>
+  <br/>
+
+  <p>Пол:</p>
+  <input type="radio" id="male" name="gender" value="male" required>
+  <label for="male">Мужской</label><br>
+  <input type="radio" id="female" name="gender" value="female" required>
+  <label for="female">Женский</label><br>
+  <br/>
+
+  <label for="Programming-language">Любимый язык программирования:</label>
+  <select id="Programming-language" name="Programming-language" multiple required>
+    <option value="Pascal">Pascal</option>
+    <option value="C">C</option>
+    <option value="C++">C++</option>
+    <option value="JavaScript">JavaScript</option>
+    <option value="PHP">PHP</option>
+    <option value="Python">Python</option>
+    <option value="Java">Java</option>
+    <option value="Haskel">Haskel</option>
+    <option value="Clojure">Clojure</option>
+    <option value="Prolog">Prolog</option>
+    <option value="Scala">Scala</option>
+  </select>
+  <br/>
+
+  <label for="Biography">Биография:</label>
+  <textarea id="Biography" name="Biography" required></textarea>
+  <br/>
+
+  <label for="Contract">С контрактом ознакомлен(а)</label>
+  <input type="checkbox" id="Contract" name="Contract" required>
+  <br/>
+
+  <input type="submit" value="Сохранить">
+</form>
+
+  
+</html>
 </body>
