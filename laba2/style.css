@@ -1,0 +1,42 @@
+header, footer, nav, article {display: block;}
+header {
+color:rgb(0, 0, 0);
+background-color:#bbbbbb; padding:12px; height: 100px;
+}
+table {
+    table-layout: fixed;
+    border: 1px solid black;
+    background-color: #c0c2c3;
+    
+    }
+    th {
+    border: 1px solid black;
+    }
+    td {
+    border: 1px solid black;
+    }
+    tbody tr:nth-child(odd) {
+    background-color: #898f95;
+    }
+    
+    tbody tr:nth-child(even) {
+    background-color: #c0c3c5;
+    }
+    caption {
+    padding: 20px;
+    color: #1e1d3f;
+    text-align: center;
+    letter-spacing: 1px;
+    }
+    .katalog {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    footer {
+        display:flex;
+        justify-content: center;
+        padding: 5px;
+        background-color: #939393;
+        color: #fff;
+    }
