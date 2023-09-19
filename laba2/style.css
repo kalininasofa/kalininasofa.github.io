@@ -10,8 +10,6 @@ table {
 }
 div {
     position: absolute;
-    top: 15px;
-    right: 0;
 }
     th {
     border: 1px solid black;
