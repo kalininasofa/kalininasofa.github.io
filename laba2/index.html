@@ -8,16 +8,14 @@
 <header>
 <img style="float:left; margin:10px; width:100px; height:100px;" src="logotipe.png" alt="Описание">
 <h1>Сайт</h1>
-<div class = "menu">
-<a href = "#spisok" class = "katalog">Список гиперссылок</a>
-<a href = "#tablitsa" class = "table">Таблица</a>
-<a href = "#forma" class = "Form">Форма</a>
-</div>
+<a href = "#spisok" class = "nav">Список гиперссылок</a>
+<a href = "#tablitsa" class = "nav">Таблица</a>
+<a href = "#forma" class = "nav">Форма</a>
 
 </header>
-  
 <nav class = "katalog">
 <h2 id = "spisok">Список гиперссылок</h2>
+</nav>
 <ul>
 <li><a href="http://kubsu.ru/">1-КубГУ</a></li>
 <li><a href="https://www.kubsu.ru/">2-КубГУ</a></li>
@@ -39,13 +37,11 @@
 <li><a href="https://www.kubsau.ru/education/chairs/comp-system/staff/12964#page-title">14-Сторонний сайт</a></li>
 <li>15. Ссылка из прямоугольной и круглой областей картинки</li>
 </ul>
-
 <img src="Мопс.png" alt="kartinka" usemap="#нажать">
 <map name="нажать">
 <area shape="rect" coords="480,230,780,380" href="https://www.google.ru/" alt="квадрат">
 <area shape="circle" coords="632,560,50" href="https://www.google.ru/" alt="круг">
 </map>
-<nav>
 <ul>
 <li><a href="">16-Ссылка с пустым href</a></li>
 <li><a>17-Ссылка без href</a></li>
@@ -61,14 +57,11 @@
 </li>
 <li><a href="ftp//login:pass@server.ru/file.txt">21-Ссылка на FTP-файл с авторизацией</a></li>
 </ul>
-</nav>
 
 <p id="fragment">Текущая страница</p>
-<nav class = "table">
 <h2 id = "tablitsa">Таблица</h2>
 <table>
 <caption>Товары для макияжа</caption>
-<body>
 <tr>
 <td>№ п/п</td>
 <td>Наименование товара</td>
@@ -97,12 +90,12 @@
 <tr>
 <td colspan = "3">Итого:</td><td>5976</td>
 </tr>
-</body>
 </table>
-</nav>
+</body>
 
 
 <nav class = "Form">
+<p id="Forma"> Форма </p>
 <h2 id = "Forma">Форма</h2>
 <form action="/" method="POST">
 <label for="f.i.o">ФИО:</label>
@@ -155,7 +148,6 @@ for="Birthday">Дата рождения:</label>
 
 <input type="submit" value="Сохранить">
 </form>
-</nav>
 <footer>
 <p>(c) София Калинина 2023. Сайт.</p>
 </footer>
