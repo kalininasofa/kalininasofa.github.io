@@ -11,6 +11,9 @@ table {
 div {
     position: absolute;
 }
+body {
+    morgin: 0;
+}
     th {
     border: 1px solid black;
     }
