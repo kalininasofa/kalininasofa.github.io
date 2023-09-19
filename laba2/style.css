@@ -3,11 +3,6 @@ header {
 color:rgb(0, 0, 0);
 background-color:#bbbbbb; padding:12px; height: 100px;
 }
-table {
-    table-layout: fixed;
-    border: 1px solid black;
-    background-color: #c0c2c3;
-}
 div {
     position: absolute;
     top: 15px;
@@ -16,43 +11,49 @@ div {
 .menu a {
     text-decoration: none;
     font-family: sans-serif;
-    color: #43437f;
     display: inline-block;
     padding: 5px 20px;
-    background-color: rgb(201, 201, 210);
-    border-bottom: 5px solid #1a1a60;
-  }
+}
 body {
     margin: 0;
 }
-    th {
+.menu {
+    list-style: none;
+    float:right;
+}
+th {
     border: 1px solid black;
-    }
-    td {
+}
+td {
     border: 1px solid black;
-    }
-    tbody tr:nth-child(odd) {
+}
+tbody tr:nth-child(odd) {
     background-color: #898f95;
-    }
-    
-    tbody tr:nth-child(even) {
+}
+
+tbody tr:nth-child(even) {
     background-color: #c0c3c5;
-    }
-    caption {
+}
+caption {
     padding: 20px;
     color: #1e1d3f;
     text-align: center;
     letter-spacing: 1px;
-    }
-    .katalog {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    footer {
-        display:flex;
-        justify-content: center;
-        padding: 5px;
-        background-color: #939393;
-        color: #fff;
-    }
+}
+.katalog {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+table {
+    table-layout: fixed;
+    border: 1px solid black;
+    background-color: #c0c2c3;
+}
+footer {
+    display:flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: #939393;
+    color: #fff;
+}
