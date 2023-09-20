@@ -8,14 +8,15 @@
 <header>
 <img style="float:left; margin:10px; width:100px; height:100px;" src="logotipe.png" alt="Описание">
 <h1>Сайт</h1>
-<div class = "menu">
+<nav class = "menu">
 <a href = "#spisok" class = "katalog">Список гиперссылок</a>
 <a href = "#tablitsa" class = "table">Таблица</a>
 <a href = "#forma" class = "Form">Форма</a>
-</div>
+</nav>
 </header>
   <main>
-<nav class = "katalog">
+    <div class = 'content'>
+<div class = "katalog">
 <h2 id = "spisok">Список гиперссылок</h2>
 <ul>
 <li><a href="http://kubsu.ru/">1-КубГУ</a></li>
@@ -53,11 +54,11 @@
 </ol>
 <li><a href="ftp//login:pass@server.ru/file.txt">21-Ссылка на FTP-файл с авторизацией</a></li>
 </ul>
-</nav>
+</div>
 
 <p id="fragment">Текущая страница</p>
   
-<nav class = "table">
+<div class = "table">
 <h2 id = "tablitsa">Таблица</h2>
 <table>
 <caption>Товары для макияжа</caption>
@@ -90,9 +91,9 @@
 <td colspan = "3">Итого:</td><td>5976</td><td></td>
 </tr>
 </table>
-</nav>
+</div>
 
-<nav class = "Form">
+<div class = "Form">
 <h2 id = "Forma">Форма</h2>
 <form action="/" method="POST">
 <label for="f.i.o">ФИО:</label>
@@ -140,7 +141,8 @@
 
 <input type="submit" value="Сохранить">
 </form>
-</nav>
+</div>
+</div>
   </main>
 <footer>
 <p>(c) София Калинина 2023. Сайт.</p>
