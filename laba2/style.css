@@ -41,7 +41,6 @@ caption {
     letter-spacing: 1px;
 }
 .katalog {
-    display: flex;
     justify-content: space-between;
     align-items: center;
 }
