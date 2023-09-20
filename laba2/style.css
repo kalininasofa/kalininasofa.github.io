@@ -14,10 +14,6 @@ div {
     display: inline-block;
     padding: 5px 20px;
 }
-.content{
-    max-width:960px;
-    margin:0auto;
-    }
 body {
     margin: 0;
 }
@@ -44,9 +40,10 @@ caption {
     text-align: center;
     letter-spacing: 1px;
 }
-.katalog {
-    justify-content: space-between;
-    align-items: center;
+.content{
+    max-width:960px;
+    margin:0auto;
+    }
 }
 table {
     table-layout: fixed;
