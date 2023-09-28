@@ -155,11 +155,11 @@ caption {
     letter-spacing: 1px;
 }
 
-.Forma {
+.Form {
     margin: 20px;
 }
 
-.Forma * {
+.Form * {
     padding: 4px 0;
 }
 
@@ -259,14 +259,14 @@ footer {
         font-size: 16px;
     }
 
-    .Forma {
+    .Form {
         margin: 0;
     }
    #Programming-language{
         font-size: 15px;
     }
 
-    .Forma * {
+    .Form * {
         font-size: 16px;
         padding: 0;
     }
@@ -275,7 +275,7 @@ footer {
         font-size: 13px;
     }
 
-    #Birthday_date{
+    #Birthday{
         font-size: 13.5px;
     }
 
