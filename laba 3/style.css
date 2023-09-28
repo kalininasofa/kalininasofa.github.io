@@ -136,7 +136,7 @@ ul {
     padding: 5px 20px;
 }
 
-.img_item {
+.img {
     position: relative;
     max-width: 100%;
 }
@@ -242,7 +242,7 @@ footer {
         padding: 0;
     }
 
-    .img_item {
+    .img {
         position: relative;
         max-width: 100%;
     }
