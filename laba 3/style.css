@@ -112,7 +112,7 @@ header {
     padding: 0;
     height: 200px;
     color: rgb(0, 0, 0);
-    background-color: #ee3e99;
+    background-color: #bbbbbb;
 }
 
 nav {
@@ -167,7 +167,7 @@ footer {
     display: flex;
     justify-content: center;
     padding: 5px;
-    background-color: #f6089a;
+    background-color: #bbbbbb;
     color: #000000;
 }
 
