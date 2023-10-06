@@ -1,192 +1,180 @@
 <!DOCTYPE html>
+ 
 <html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Сайт</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+		<link rel="stylesheet" href="style.css">
+	</head>
 
-  <head>
-    <meta charset="UTF-8">
-    <title>Сайт</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <link rel = "stylesheet" href = "style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">  
-  </head>
+	<body>
+        <div class='wrapper'>
+			<header class='header'>
+				<div class='container-fluid'>
+					<div class='row'>
+						<div class='d-flex flex-row mb-2 col-md-4 col-lg-6 p-2'>
+							<div class='d-flex align-items-center'>
+								<img style="float:left; margin:10px; width:100px; height:100px;" class src="logotipe.png" alt="Описание">
+                                <h1 id = denomination>Сайт</h1>
+							</div>
+						</div>
+                        <div class='col-md-8 col-lg-2 p-2'>
+                            <nav class='d-flex flex-column flex-md-row justify-content-end'>
+								<a href = "#spisok" class = "katalog">Список гиперссылок</a>
+                                <a href = "#table" class = "Table">Таблица</a>
+                                <a href = "#Forma" class = "Form">Форма</a>
+                            </nav>
+					</div>
+                </div>
+			</div>
+			</header>
 
-  <body>
-    <div class = "mx-auto">
-      <header class = "golova">
-        <img class = "logotipe" src="logotipe.png" alt="logotipe" />
-        <h1 id = "nazv">Страница сайт</h1>
-      </header>
-    </div>
-
-    <main>
-      <div class = "container">
-        <div class = "discription text-right">
-          <nav class = "list d-flex flex-column">
-            <a href = "#spisok" class = "katalog">Список гиперссылок</a>
-            <a href = "#table" class = "table">Таблица</a>
-            <a href = "#Forma" class = "Form">Форма</a>
-          </nav>
-        </div>
-      </div>
-    </main>
-
-    <div class = "container">
-      <div class = "row">
-        <div class = "order-2 order-md-1">
-          <div class = "menu row">
-            <div class = 'content'>
-              <div class = "katalog">
-            <h1 id = "spisok">Список гиперсылок</h1>
-            <ul>
-              <li><a href="http://kubsu.ru/">1-КубГУ</a></li>
-              <li><a href="https://www.kubsu.ru/">2-КубГУ</a></li>
-              <li>
-                <a href="http://kubsu.ru/">3-<img src="/КубГУ.jpg" alt="альтернативный текст"></a>
-              </li>
-              <li><a href="./about.html">4-Youtube</a></li>
-              <li><a href="/index.html">5-Сокращенная на глав страницу</a></li>
-              <li><a href="#fragment">6-Текущая страница</a></li>
-              <li><a href="?klass=3&qwerty=fast&cool=not">7-Три параметра</a></li>
-              <li><a href="index.html?id=fragment">8-Параметр id в URL</a></li>
-              <li><a href="./index2.html">9-Cсылка на страницу в данном каталоге</a></li>
-              <li><a href="./about/index3.html">10-Cсылка на страницу в каталоге about</a></li>
-              <li><a href="../index.html">11-Cсылка на страницу в каталоге выше текущего</a></li>
-              <li><a href="./index4/index5/index6.html">12-Ссылка на два уровня</a></li>
-              <li>
-                <p>13-Абзац, указывающий на контекстную <a href="index.html#fragment"> ссылку</a></p>
-              </li>
-              <li><a href="https://www.kubsau.ru/education/chairs/comp-system/staff/12964#page-title">14-Сторонний сайт</a></li>
-              <li>15. Ссылка из прямоугольной и круглой областей картинки</li>
-            </ul>
-            <img src="Мопс.png" alt="kartinka" usemap="#нажать">
-            <map name="нажать">
-              <area shape="rect" coords="480,230,780,380" href="https://www.google.ru/" alt="квадрат">
-              <area shape="circle" coords="632,560,50" href="https://www.google.ru/" alt="круг">
-            </map>
-            <ul>
-              <li><a href="">16-Ссылка с пустым href</a></li>
-              <li><a>17-Ссылка без href</a></li>
-              <li><a href="http://site.ru" rel="nofollow">18-Ссылка, по которой запрещен переход поисковикам</a></li>
-              <li><a href="http://site.ru" rel="noindex">19-Ссылка, по которой запрещена индексация </a></li>
-              <li>
-                20-Нумерованный список ссылок с подписями title
-                <ol>
-                  <li><a href="https://youtu.be/pb0Y1p0VYX8?si=jMHv1uFJBT7JmUMZ" title="Плюсы и минусы Краснодара">Жизнь в Краснодаре</a></li>
-                  <li><a href="https://youtu.be/NCYBVWYdCaE?si=KBzKb9Inh6oululf" title="Парк Галицкого">Парк Галицкого</a></li>
-                  <li><a href="https://youtu.be/1iINPh6WlGw?si=bTfosMcUDZj-G_iL" title="Японский сад">Японский сад</a></li>
-                </ol>
-              </li>
-              <li><a href="ftp//login:pass@server.ru/file.txt">21-Ссылка на FTP-файл с авторизацией</a></li>
-            </ul>
-          </body>
-        </html>
-          
-        <br/> 
-        <br/> 
-        <br/>
-        
-        <p id="element">Фрагмент текущей страницы</p>
-        
-        <br/>
-        <br/>
-        <br/>
-
-        <div class = "order-1 order-md-2">
-          <h1 id = "table">Таблица</h1>
-          <table class = "table table-striped table-bordered">
-            <div class = "table">
-               <caption>Товары для макияжа</caption>
-              <table>
-              <tr>
-              <td>№ п/п</td>
-              <td>Наименование товара</td>
-              <td>Количество</td>
-              <td>Стоимость, руб.</td>
-              <td>Магазин, где товар имеется в наличии</td>
-              </tr>
-              <tr>
-              <td>1.</td><td>Пудра</td><td>1</td><td>899</td><td>Магнит косметик</td>
-              </tr>
-              <tr>
-              <td>2.</td><td>Тушь</td><td>2</td><td>1080</td><td>РивГош</td>
-              </tr>
-              <tr>
-              <td>3.</td><td>Хайлайтер</td><td>2</td><td>1100</td><td>Лэтуаль</td>
-              </tr>
-              <tr>
-              <td>4.</td><td>Помада</td><td>1<td>500</td><td>Золотое яблоко</td>
-              </tr>
-              <tr>
-              <td>5.</td><td>Консиллер</td><td>1</td><td>399</td><td>Магнит косметик</td>
-              </tr>
-              <tr>
-              <td>6.</td><td>Румяна</td><td>2</td><td>1998</td><td>Золотое яблоко</td>
-              </tr>
-              <tr>
-              <td colspan = "3">Итого:</td><td>5976</td><td></td>
-              </tr>
-              </tbody>
-              </table>
-              </div>
-          </table>
-        </div>
-        
-        <div class = "Form">
-          <h2 id = "Forma">Форма</h2>
-          <form action="/" method="POST">
-          <label for="f.i.o">ФИО:</label>
-          <input type="text" id="f.i.o" name="f.i.o" required>
-          <br>
-          <label for="Phone">Телефон:</label>
-          <input type="tel" id="Phone" name="Phone" required>
-          <br>
-          <label for="Email">E-mail:</label>
-          <input type="Email" id="Email" name="Email">
-          <br>
-          <label for="Birthday">Дата рождения:</label>
-          <input type="date" id="Birthday" name="Birthday" required>
-          <br>
-            
-          <p>Пол:</p>
-          <input type="radio" id="female" name="gender" value="female" required>
-          <label for="female">Женский</label><br>
-          <input type="radio" id="male" name="gender" value="male" required>
-          <label for="female">Мужской</label><br>
-          <br>
-          
-          <label for="Programming-language">Любимый язык программирования:</label>
-          <select id="Programming-language" name="Programming-language" multiple required>
-          <option value="Pascal">Pascal</option>
-          <option value="C">C</option>
-          <option value="C++">C++</option>
-          <option value="JavaScript">JavaScript</option>
-          <option value="PHP">PHP</option>
-          <option value="Python">Python</option>
-          <option value="Java">Java</option>
-          <option value="Haskel">Haskel</option>
-          <option value="Clojure">Clojure</option>
-          <option value="Prolog">Prolog</option>
-          <option value="Scala">Scala</option>
-          </select>
-          <br>
-          <label for="biography">Биография:</label>
-          <textarea id="biography" name="biography" required></textarea>
-          <br>
-          
-          <label for="Contract">С контрактом ознакомлен(а)</label>
-          <input type="checkbox" id="Contract" name="Contract" required>
-          <br>
-          
-          <input type="submit" value="Сохранить">
-          </form>
-          </div>
-          </div>
-            </main>
-          <footer>
-          <p>(c) София Калинина 2023. Сайт.</p>
-          </footer>
-          </body>
-          
-          </html>
+		
+			<main class='main'>
+				<div class='content d-flex flex-column m-md-auto p-2'>
+                        <div class = "katalog">
+                            <h2 id = "spisok">Список гиперссылок</h2>
+						<ul>
+                            <li><a href="http://kubsu.ru/">1-КубГУ</a></li>
+                            <li><a href="https://www.kubsu.ru/">2-КубГУ</a></li>
+                            <li><a href="http://kubsu.ru/">3-<img class="img" src="КубГУ.jpg" alt="альтернативный текст"></a></li>
+                            <li><a href="./about.html">4-Youtube</a></li>
+                            <li><a href="/index.html">5-Сокращенная на глав страницу</a></li>
+                            <li><a href="#fragment">6-Текущая страница</a></li>
+                            <li><a href="?klass=3&qwerty=fast&cool=not">7-Три параметра</a></li>
+                            <li><a href="index.html?id=fragment">8-Параметр id в URL</a></li>
+                            <li><a href="./index2.html">9-Cсылка на страницу в данном каталоге</a></li>
+                            <li><a href="./about/index3.html">10-Cсылка на страницу в каталоге about</a></li>
+                            <li><a href="../index.html">11-Cсылка на страницу в каталоге выше текущего</a></li>
+                            <li><a href="./index4/index5/index6.html">12-Ссылка на два уровня</a></li>
+                            <li><p>13-Абзац, указывающий на контекстную <a href="index.html#fragment"> ссылку</a></p></li>
+                            <li><a href="https://www.kubsau.ru/education/chairs/comp-system/staff/12964#page-title">14-Сторонний сайт</a></li>
+                            <li>15-Ссылка из прямоугольной и круглой областей картинки</li>
+                            </ul>
+                              
+                            <li><img src="Мопс.png" class="img" alt="kartinka" usemap="#нажать"></li>
+                            <map name="нажать">
+                            <area shape="rect" coords="480,230,780,380" href="https://www.google.ru/" alt="квадрат">
+                            <area shape="circle" coords="632,560,50" href="https://www.google.ru/" alt="круг">
+                            </map>
+                            <ul>
+                            <li><a href="">16-Ссылка с пустым href</a></li>
+                            <li><a>17-Ссылка без href</a></li>
+                            <li><a href="http://site.ru" rel="nofollow">18-Ссылка, по которой запрещен переход поисковикам</a></li>
+                            <li><a href="http://site.ru" rel="noindex">19-Ссылка, по которой запрещена индексация </a></li>
+                            <li>20-Нумерованный список ссылок с подписями title
+                            <ol>
+                            <li><a href="https://youtu.be/pb0Y1p0VYX8?si=jMHv1uFJBT7JmUMZ" title="Плюсы и минусы Краснодара">Жизнь в Краснодаре</a></li>
+                            <li><a href="https://youtu.be/NCYBVWYdCaE?si=KBzKb9Inh6oululf" title="Парк Галицкого">Парк Галицкого</a></li>
+                            <li><a href="https://youtu.be/1iINPh6WlGw?si=bTfosMcUDZj-G_iL" title="Японский сад">Японский сад</a></li>
+                            </ol>
+                            <li><a href="ftp//login:pass@server.ru/file.txt">21-Ссылка на FTP-файл с авторизацией</a></li>
+						</ul>
+					</div>
+					
+					<div class='table'>
+                        <h2 id="table">Таблица</h2>
+                        <table>
+                            <caption>Товары для макияжа</caption>
+                            <thead>
+                              <tr>
+                                <td>№ п/п</td>
+                                <td>Наименование товара</td>
+                                <td>Количество</td>
+                                <td>Стоимость, руб.</td>
+                                <td>Магазин, где товар имеется в наличии</td>
+                                </tr>
+                                <tr>
+                                <td>1.</td><td>Пудра</td><td>1</td><td>899</td><td>Магнит косметик</td>
+                                </tr>
+                                <tr>
+                                <td>2.</td><td>Тушь</td><td>2</td><td>1080</td><td>РивГош</td>
+                                </tr>
+                                <tr>
+                                <td>3.</td><td>Хайлайтер</td><td>2</td><td>1100</td><td>Лэтуаль</td>
+                                </tr>
+                                <tr>
+                                <td>4.</td><td>Помада</td><td>1<td>500</td><td>Золотое яблоко</td>
+                                </tr>
+                                <tr>
+                                <td>5.</td><td>Консиллер</td><td>1</td><td>399</td><td>Магнит косметик</td>
+                                </tr>
+                                <tr>
+                                <td>6.</td><td>Румяна</td><td>2</td><td>1998</td><td>Золотое яблоко</td>
+                                </tr>
+                                <tr>
+                                <td colspan = "3">Итого:</td><td></td>
+                              <td>5976</td>
+                              <td></td>
+                                </tr>
+                            </tbody>
+						</table>
+					</div>
+					
+					<div class="Form">
+                        <p id="Forma"> Форма </p>
+						<form action="/" method="POST">
+							<label>
+                                <label for="fio"> Фамилия Имя Отчество: </label>
+                                <input type="text" id="fio" name="fio" required>
+                                <br>
+                          
+                                <label for="Phone_number"> Номер телефона: </label>
+                                <input type="tel" id="Phone_number" name="Phone_number" required>
+                                <br>
+                          
+                                <label for="E-mail">E-mail:</label>
+                                <input type="email" id="E-mail" name="E-mail" placeholder="Введите почту">
+                                <br>
+                          
+                                <label for="Birthday_date"> Дата рождения: </label>
+                                <input type="date" id="Birthday_date" name="Birthday_date" required>
+                                <br>
+                          
+                                <p>Пол: </p>
+                                <input type="radio" id="female" name="gender" value="female" required>
+                                <label for="female"> Женский</label>
+                                <br>
+                                <input type="radio" id="male" name="gender" value="male" required>
+                                <label for="male"> Мужской</label>
+                                <br>
+                          
+                                <label for="Programming_language">Любимый язык программирования:</label>
+                                <select id="Programming_language" name="Programming_language" multiple required>
+                                  <option value="C++">C++</option>
+                                  <option value="C">C</option>
+                                  <option value="Clojure">Clojure</option>
+                                  <option value="Haskel">Haskel</option>
+                                  <option value="Java">Java</option>
+                                  <option value="JavaScript">JavaScript</option>
+                                  <option value="Pascal">Pascal</option>
+                                  <option value="PHP">PHP</option>
+                                  <option value="Prolog">Prolog</option>
+                                  <option value="Python">Python</option>
+                                  <option value="Scala">Scala</option>
+                                </select>
+                                <br>
+                          
+                                <label for="Bio">Биография: </label>
+                                <textarea id="Bio" name="Bio" required></textarea>
+                                <br>
+                          
+                                <label for="Agreement">С контрактом ознакомлен(а)</label>
+                                <input type="checkbox" id="Agreement" name="Agreement" required>
+                                <br>
+                                <input type="submit" value="Сохранить">
+						</form>
+					</div>
+				</div>
+			</main>
+			
+            <footer class="text-center">
+				<p>(c) Софа Калинина 2023. Сайт.</p>
+            </footer>
+		</div>
+		
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	</body>
+</html>
