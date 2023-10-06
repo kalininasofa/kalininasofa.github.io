@@ -114,61 +114,56 @@
 					</div>
 					
 					<div class="Form">
-                        <p id="Forma"> Форма </p>
-						<form action="/" method="POST">
-							<label>
-                                <label for="fio"> Фамилия Имя Отчество: </label>
-                                <input type="text" id="fio" name="fio" required>
-                                <br>
-                          
-                                <label for="Phone_number"> Номер телефона: </label>
-                                <input type="tel" id="Phone_number" name="Phone_number" required>
-                                <br>
-                          
-                                <label for="E-mail">E-mail:</label>
-                                <input type="email" id="E-mail" name="E-mail" placeholder="Введите почту">
-                                <br>
-                          
-                                <label for="Birthday_date"> Дата рождения: </label>
-                                <input type="date" id="Birthday_date" name="Birthday_date" required>
-                                <br>
-                          
-                                <p>Пол: </p>
-                                <input type="radio" id="female" name="gender" value="female" required>
-                                <label for="female"> Женский</label>
-                                <br>
-                                <input type="radio" id="male" name="gender" value="male" required>
-                                <label for="male"> Мужской</label>
-                                <br>
-                          
-                                <label for="Programming_language">Любимый язык программирования:</label>
-                                <select id="Programming_language" name="Programming_language" multiple required>
-                                  <option value="C++">C++</option>
-                                  <option value="C">C</option>
-                                  <option value="Clojure">Clojure</option>
-                                  <option value="Haskel">Haskel</option>
-                                  <option value="Java">Java</option>
-                                  <option value="JavaScript">JavaScript</option>
-                                  <option value="Pascal">Pascal</option>
-                                  <option value="PHP">PHP</option>
-                                  <option value="Prolog">Prolog</option>
-                                  <option value="Python">Python</option>
-                                  <option value="Scala">Scala</option>
-                                </select>
-                                <br>
-                          
-                                <label for="Bio">Биография: </label>
-                                <textarea id="Bio" name="Bio" required></textarea>
-                                <br>
-                          
-                                <label for="Agreement">С контрактом ознакомлен(а)</label>
-                                <input type="checkbox" id="Agreement" name="Agreement" required>
-                                <br>
-                                <input type="submit" value="Сохранить">
-						</form>
-					</div>
-				</div>
-			</main>
+                        <h2 id = "Forma">Форма</h2>
+<form action="/" method="POST">
+<label for="f.i.o">ФИО:</label>
+<input type="text" id="f.i.o" name="f.i.o" required>
+<br>
+<label for="Phone">Телефон:</label>
+<input type="tel" id="Phone" name="Phone" required>
+<br>
+<label for="Email">E-mail:</label>
+<input type="Email" id="Email" name="Email">
+<br>
+<label for="Birthday">Дата рождения:</label>
+<input type="date" id="Birthday" name="Birthday" required>
+<br>
+  
+<p>Пол:</p>
+<input type="radio" id="female" name="gender" value="female" required>
+<label for="female">Женский</label><br>
+<input type="radio" id="male" name="gender" value="male" required>
+<label for="female">Мужской</label><br>
+<br>
+
+<label for="Programming-language">Любимый язык программирования:</label>
+<select id="Programming-language" name="Programming-language" multiple required>
+<option value="Pascal">Pascal</option>
+<option value="C">C</option>
+<option value="C++">C++</option>
+<option value="JavaScript">JavaScript</option>
+<option value="PHP">PHP</option>
+<option value="Python">Python</option>
+<option value="Java">Java</option>
+<option value="Haskel">Haskel</option>
+<option value="Clojure">Clojure</option>
+<option value="Prolog">Prolog</option>
+<option value="Scala">Scala</option>
+</select>
+<br>
+<label for="biography">Биография:</label>
+<textarea id="biography" name="biography" required></textarea>
+<br>
+
+<label for="Contract">С контрактом ознакомлен(а)</label>
+<input type="checkbox" id="Contract" name="Contract" required>
+<br>
+
+<input type="submit" value="Сохранить">
+</form>
+</div>
+</div>
+  </main>
 			
             <footer class="text-center">
 				<p>(c) Софа Калинина 2023. Сайт.</p>
