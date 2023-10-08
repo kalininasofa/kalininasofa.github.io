@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
-var itogo = document.getElementById("stoimost");
-itogo.addEventListener("click", calc());
+var itogo = document.getElementById("itogo");
+itogo.addEventListener("click", kalkuliator());
 });
 
-function calc() {
+function kalkuliator() {
 var name = document.getElementById("select1");
 var count = document.getElementById("count");
 var result = document.getElementById("result");
