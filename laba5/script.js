@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 document.addEventListener("DOMContentLoaded", function () {
 var itogo = document.getElementById("itogo");
 itogo.addEventListener("click", kalkuliator());
