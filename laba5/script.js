@@ -21,5 +21,5 @@ price += parseInt(name.options[name.selectedIndex].value);
 price = parseInt(count.value) * price;
 result.innerHTML = price;
 }
-  else alert("Введите количество товаров:");
+  else alert("Введите необходимые данные:");
 } 
