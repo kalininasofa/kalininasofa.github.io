@@ -1,28 +1,52 @@
 <!DOCTYPE html>
-<html lang = "ru">
-<head>
-<meta charset="utf-8">
-<title>Калькулятор рассчёта стоимости товаров магазина косметики:</title>
-<script defer src="script.js"></script>
-</head>
+<html lang="ru">
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Калькулятор стоимости заказа</title>
+        <script defer src="script.js"></script>
+    </head>
 
-<body>
-<main>
-<h2>Калькулятор рассчёта стоимости заказа косметики</h2>
-<select onchange = "kalkuliator()" id="select">
-<option value="0">Выбрать</option>
-<option value="980">Пудра</option>
-<option value="659">Помада</option>
-<option value="769">Тушь для ресниц</option>
-<option value="400">Хайлайтер</option>
-<option value="350">Гель для бровей</option>
-<option value="1000">Румяна</option>
-</select>
-<input id = "count" type = "number" placeholder="Количесво товаров:">
-<button id = "itogo" onclick = "return kalkuliator();">Посчитать</button>
-<div>
-Итого = <span id = "result"></span>
-</div>
-</main>
-</body>
+    <body>
+        <main>
+            <h2>Магазин техники "Мвидео"</h2>
+            <form>
+                <p id = "message">Выберете товар и укажите нужное количество:</p>
+
+                <select name="myselect">
+                    <option value="0">Выберете тип товара:</option>
+                    <option value="1">Наушники беспроводные</option>
+                    <option value="2">Флешка</option>
+                    <option value="3">Телефон huawei</option>
+                    <option value="4">Телефон honor</option>
+                    <option value="5">SD карта</option>
+                </select>
+
+                <br>
+                <select id="select1">
+                    <option value="0">Выбрать товар</option>
+                    <option value="699">8gb</option>
+                    <option value="899">16gb</option>
+                    <option value="1199">32gb</option>
+                    <option value="1399">64gb</option>
+                </select>
+                
+                <input id="count" type="number" placeholder="Введите нужное количесво:">
+
+                <div class="myradios" id="myradios">Выберете тип получения товара:<br>
+                    <label><input type="radio" name="myradio" value="0">Самовывоз</label><br>
+                    <label><input type="radio" name="myradio" value="600">Доставка курьером до двери</label><br>
+                    <label><input type="radio" name="myradio" value="450">Доставка курьером до дома</label>
+                </div>
+                <div class="checkboxes" id="checkboxes">Выберете добавочные услуги:
+                    <label><input type="checkbox" name="props" value="1500" onchange="kalkuliator();"> подарочный сертификат</label>
+                    <label><input type="checkbox" name="props" value="20" onchange="kalkuliator();"> пакет</label>
+                  </div>
+                <button id="itogo" onclick="return kalkuliator();">Итого:</button>
+                <div>
+                    Итого = <span id="result"></span>
+                </div>
+            </form>
+        </main>
+    </body>
 </html>
