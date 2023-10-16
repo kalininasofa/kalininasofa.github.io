@@ -1,52 +1,116 @@
 <!DOCTYPE html>
 <html lang="ru">
-    
-    <head>
-        <meta charset="utf-8">
-        <title>Калькулятор стоимости заказа</title>
-        <script defer src="script.js"></script>
-    </head>
 
-    <body>
-        <main>
-            <h2>Магазин техники "Мвидео"</h2>
-            <form>
-                <p id = "message">Выберете товар и укажите нужное количество:</p>
+<head>
+  <meta charset="utf-8">
+  <title>Калькулятор стоимости заказа магазина техники "Мвидео"</title>
+  <script defer src="script.js"></script>
+</head>
 
-                <select name="myselect">
-                    <option value="0">Выберете тип товара:</option>
-                    <option value="1">Наушники беспроводные</option>
-                    <option value="2">Флешка</option>
-                    <option value="3">Телефон huawei</option>
-                    <option value="4">Телефон honor</option>
-                    <option value="5">SD карта</option>
-                </select>
+<body>
+  <main>
+    <h2>Магазин товаров "Мвидео"</h2>
+    <form>
+      <p id="message">Выберите товар и введите нужное количество</p>
 
-                <br>
-                <select id="select1">
-                    <option value="0">Выбрать товар</option>
-                    <option value="699">8gb</option>
-                    <option value="899">16gb</option>
-                    <option value="1199">32gb</option>
-                    <option value="1399">64gb</option>
-                </select>
-                
-                <input id="count" type="number" placeholder="Введите нужное количесво:">
+      <select id="myselect">
+        <option selected disabled hidden>Выберите товар</option>
+        <option value="1">Флешка</option>
+        <option value="2">SD карты</option>
+        <option value="3">Беспроводные наушники</option>
+      </select>
 
-                <div class="myradios" id="myradios">Выберете тип получения товара:<br>
-                    <label><input type="radio" name="myradio" value="0">Самовывоз</label><br>
-                    <label><input type="radio" name="myradio" value="600">Доставка курьером до двери</label><br>
-                    <label><input type="radio" name="myradio" value="450">Доставка курьером до дома</label>
-                </div>
-                <div class="checkboxes" id="checkboxes">Выберете добавочные услуги:
-                    <label><input type="checkbox" name="props" value="1500" onchange="kalkuliator();"> подарочный сертификат</label>
-                    <label><input type="checkbox" name="props" value="20" onchange="kalkuliator();"> пакет</label>
-                  </div>
-                <button id="itogo" onclick="return kalkuliator();">Итого:</button>
-                <div>
-                    Итого = <span id="result"></span>
-                </div>
-            </form>
-        </main>
-    </body>
+      <select id="select1">
+        <option selected disabled hidden>Выбрать тип флешки</option>
+        <option value="499">8gb</option>
+        <option value="699">16gb</option>
+        <option value="899">32gb</option>
+        <option value="1199">64gb</option>
+
+      </select>
+
+      <input id="count" type="number" placeholder="Введите количество товара" onchange="kalkuliator();">
+
+      <div class="myradios" id="myradios">Тип получения товаров:
+
+        <label>
+          <input type="radio" name="myradio" value="0" onchange="kalkuliator();">Самостоятельно получить товар</label>
+
+        <label>
+          <input type="radio" name="myradio" value="400" onchange="kalkuliator();">Доставка курьером до двери квартиры</label>
+
+      </div>
+
+      <div class="checkboxes" id="checkboxes">Дополнительно:
+        <label>
+          <input type="checkbox" name="props" value="2000" onchange="kalkuliator();"> Подарочная карта</label>
+        <label>
+          <input type="checkbox" name="props" value="40" onchange="kalkuliator();"> Пакет</label>
+      </div>
+
+      <div>
+        Итого = <span id="result"> руб.</span>
+      </div>
+    </form>
+  </main>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Калькулятор стоимости заказа магазина техники "Мвидео"</title>
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <main>
+    <h2>Магазин товаров "Мвидео"</h2>
+    <form>
+      <p id="message">Выберите товар и введите нужное количество</p>
+
+      <select id="myselect">
+        <option selected disabled hidden>Выберите товар</option>
+        <option value="1">Флешка</option>
+        <option value="2">SD карты</option>
+        <option value="3">Беспроводные наушники</option>
+      </select>
+
+      <select id="select1">
+        <option selected disabled hidden>Выбрать тип флешки</option>
+        <option value="499">8gb</option>
+        <option value="699">16gb</option>
+        <option value="899">32gb</option>
+        <option value="1199">64gb</option>
+
+      </select>
+
+      <input id="count" type="number" placeholder="Введите количество товара" onchange="kalkuliator();">
+
+      <div class="myradios" id="myradios">Тип получения товаров:
+
+        <label>
+          <input type="radio" name="myradio" value="0" onchange="kalkuliator();">Самостоятельно получить товар</label>
+
+        <label>
+          <input type="radio" name="myradio" value="400" onchange="kalkuliator();">Доставка курьером до двери квартиры</label>
+
+      </div>
+
+      <div class="checkboxes" id="checkboxes">Дополнительно:
+        <label>
+          <input type="checkbox" name="props" value="2000" onchange="kalkuliator();"> Подарочная карта</label>
+        <label>
+          <input type="checkbox" name="props" value="40" onchange="kalkuliator();"> Пакет</label>
+      </div>
+
+      <div>
+        Итого = <span id="result"> руб.</span>
+      </div>
+    </form>
+  </main>
+</body>
+
 </html>
