@@ -49,16 +49,11 @@ html,body{
 	width: 30px;
 	height: 60px;
 }
-.slider .slick-arrow.slick-prev{
+.prev{
 	left: 0;
-	background: url('../img/l.svg') 0 0 / 100% no-repeat;
 }
-.slider .slick-arrow.slick-next{
+.next{
 	right: 0;
-	background: url('../img/r.svg') 0 0 / 100% no-repeat;
-}
-.slider .slick-arrow.slick-disabled{
-	opacity: 0.2;
 }
 .slider .slick-dots{
 	display: flex;
