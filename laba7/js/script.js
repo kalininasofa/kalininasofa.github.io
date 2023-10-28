@@ -3,6 +3,8 @@ $(document).ready(function(){
 		arrows:true,
 		dots:true,
 		slidesToShow:3,
+		prevArrow: "<img src='img/l.svg' class='prev' alt='1'>",
+        	nextArrow: "<img src='img/r.svg' class='next' alt='2'>",
 		responsive:[
 			{
 				breakpoint: 768,
