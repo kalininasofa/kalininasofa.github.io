@@ -3,9 +3,8 @@ $(document).ready(function(){
 		arrows:true,
 		dots:true,
 		slidesToShow:3,
-		autoplay:true,
-		speed:1000,
-		autoplaySpeed:800,
+		prevArrow: "<img src='img/l.svg' class='prev' alt='1'>",
+        	nextArrow: "<img src='img/r.svg' class='next' alt='2'>",
 		responsive:[
 			{
 				breakpoint: 768,
@@ -14,7 +13,7 @@ $(document).ready(function(){
 				}
 			},
 			{
-				breakpoint: 550,
+				breakpoint: 480,
 				settings: {
 					slidesToShow:1
 				}
