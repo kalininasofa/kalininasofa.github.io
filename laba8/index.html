@@ -1,1 +1,45 @@
+<!DOCTYPE html>
 
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Форма</title>
+        <script src = "https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <button id = "but1">Нажмите, чтобы перейти к заполнению</button>
+
+        <div class="popup">
+            <div class="popup_container">
+                <div class="popup_wrapper">
+
+                    <div id="myForm">
+                        <form class = "form-container">
+                            <label for = "name">Фамилия Имя Отчество: </label>
+                            <input type = "text" id = "name" name = "name" placeholder = "Введите Фамилию Имя Отчество" required><br>
+                
+                            <label for = "E-mail">Mail: </label>
+                            <input type = "email" id = "e_mail" name = "E-mail" placeholder = "Введите E-mail" required><br>
+                           
+                            <label for = "telephone_number">Номер телефона: </label>
+                            <input type = "tel" id="telephone" name = "telph" placeholder = "Введите номер" required><br>
+                            
+                            <label for = "Organization">Название организации: </label>
+                            <input type = "text" id = "organization" name = "organization" placeholder = "Введите название организации" required><br>
+                            
+                            <label for = "Messages">Сообщение: </label>
+                            <textarea id = "message" name = "messagee" placeholder="Введите сообщение" required></textarea><br>
+                            
+                            <input type="checkbox" required>Я даю согласие на обработку персональных данных
+                            <br><input type="submit" id = "but">Отправить ответ</input></br>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
