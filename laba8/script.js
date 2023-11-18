@@ -5,8 +5,8 @@ const popup = document.querySelector(".popup");
 button.addEventListener("click",()=>{
     form.classList.add("open");
     popup.classList.add("open");
-    history.pushState(null, null, 'myForm.html');
-    history.forward();
+    window.history.pushState(null, null, "myForm.html");
+    window.history.forward();
 });
 
 let popupOpen = false;
@@ -35,7 +35,6 @@ $(window).on("popstate", function() {
 $(function(){
     $(".pop").submit(function(e){
       e.preventDefault();
-      
       $.ajax({
           type: "POST",
           url: "https://formcarry.com/s/oVU4VvuuJD",
@@ -48,19 +47,18 @@ $(function(){
                 alert("Данные успешно отправлены!");
             }
             else if(response.code === 422){
-              alert("Field validation failed");
+              window.alert("Field validation failed");
               $.each(response.errors, function(key) {
                 $('[name="' + key + '"]').addClass('formcarry-field-error');
               });
             }
             else{
-              alert("An error occured: " + response.message);
+              window.alert("An error occured: " + response.message);
             }
           },
           error: function(jqXHR, textStatus){
-            const errorObject = jqXHR.responseJSON
-  
-            alert("Request failed, " + errorObject.title + ": " + errorObject.message);
+            const errorObject = jqXHR.responseJSON;
+            window.alert("Request failed, " + errorObject.title + ": " + errorObject.message);
           },
           complete: function(){
             document.getElementById("myForm").reset();
@@ -86,9 +84,9 @@ document.querySelector(".pop").addEventListener("submit", function(event) {
     const savedPhone = JSON.parse(localStorage.getItem("phone"));
     const savedOrganiz = JSON.parse(localStorage.getItem("organiz"));
     const savedMessage = JSON.parse(localStorage.getItem("message"));
-    console.log(savedName);
-    console.log(savedMail);
-    console.log(savedPhone);
-    console.log(savedOrganiz);
-    console.log(savedMessage);
+    window.console.log(savedName);
+    window.console.log(savedMail);
+    window.console.log(savedPhone);
+    window.console.log(savedOrganiz);
+    window.console.log(savedMessage);
   });
